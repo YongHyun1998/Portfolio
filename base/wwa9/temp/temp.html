@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yong_Hyun_Kim</title>
+    
+   
+    <!-- css -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <style type="text/css">
+        body {
+            height: 3000px;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <canvas id="myChartOne" width="170" height="170"></canvas>
+    <button>실행</button>
+    <script type="text/javascript">
+    	function ch1() {
+    		new Chart(document.getElementById("myChartOne").getContext('2d'), {
+		        type: "doughnut", // 차트의 형태
+		        data: { //차트에 들어갈 데이터
+		            datasets: [{
+		                data: [90, 10],
+		                backgroundColor: [
+		                    "#fc490b",
+		                    "white",
+		                ],
+		                borderWidth: 0, //경계선 굵기
+		                scaleBeginAtZero: true,
+		                hoverOffset: -10,
+		            }],
+		        },
+		        options: {
+		            responsive: false, //false시 원하는 크기로 수정
+		            cutout: "80%",
+		            
+		        }
+		    });
+    	}
+
+    	var btn = document.querySelector("button");
+    	btn.onclick = function() {
+    		ch1();
+    	}
+        
+        
+    </script>
+</body>
+</html>

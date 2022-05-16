@@ -1,0 +1,45 @@
+1. new버튼으로 repository생성
+
+    Repository name: 저장소의 이름
+    Description: 저장소에 대한 간단한 설명
+    Public: 저장소를 모두에게 공개
+    Private: 지정된 사람에게만 공개
+
+initialize this repository with a README를 체크해주면 저장소가 생성될 때 README.md 파일이 자동으로 함께 생성된다.
+
+2. 올릴 폴더 우클릭 후 git bash here 클릭
+
+3. 초기설정하기 (했으면 4번으로)
+    $ git config --global user.name
+    (user.name에 가입시 지정했던 이름)
+    $ git config --global user.email
+    (user.email에 가입시 지정했던 이메일)
+
+4.Repository로 이동 후 HTTPS에 해당하는 url 복사하기
+
+5.
+    git init입력
+    폴더안에 .git폴더 생성된걸 확인 후
+
+    git add .
+    입력 후
+
+    git commit -m "입력하고싶은 메세지" 로 커밋로그 작성
+
+    commit한 파일 업로드하기
+    $ git push -f https://github.com/YongHyun1998/Portfolio.git master
+
+    붙여넣기 shift + insert
+
+
+커밋(commit) : 파일을 추가하거나 변경 내용을 저장소에 저장하는 작업
+푸시(push) : 파일을 추가하거나 변경 내용을 원격 저장소에 업로드하는 작업
+
+로컬 저장소 : 자신의 컴퓨터
+원격 저장소 : 서버 등 네크워크
+
+기본적으로 로컬 저장소에서 작업을 수행하고 그 결과를 원격 저장소에 저장하게 된다.
+
+브랜치(branch) : 역사의 흐름을 분기하여 기록해 나가는 것이다. 같은 저장소에서 각 개발을 해 나갈 수 있다.
+
+2022
